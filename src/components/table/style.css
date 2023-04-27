@@ -1,0 +1,6 @@
+.line{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, auto));
+    gap:10px;
+    justify-content: space-between;
+}

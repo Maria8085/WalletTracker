@@ -1,0 +1,12 @@
+@import "/public/fonts/font.css";
+
+@config "../tailwind.config.js";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page{
+    font-family: 'Jost', serif;
+    font-weight: 400;
+}
