@@ -9,6 +9,7 @@ export default {
         'my-blue': "#4DA7FF",
         'my-gray02': "#77828C",
         "my-gray03": "#AEBBC8",
+        "my-gray04": "#F5F8FA",
         "my-green": "#1FB625",
       },
       backgroundImage: {

@@ -4,3 +4,7 @@
     gap:10px;
     justify-content: space-between;
 }
+
+.littleText{
+    font-size: 18px;
+}

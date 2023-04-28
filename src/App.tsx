@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className='page bg-my-gray min-h-screen w-screen flex flex-row'>
-      <div className="h-full w-[200px]"></div>
+      <div className="h-full w-[200px] flex-shrink-0"></div>
       <Menu />
       <Transition/>
     </div>
