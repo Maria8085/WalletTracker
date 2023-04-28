@@ -1,0 +1,36 @@
+.hamburger {
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 45px;
+    height: 45px;
+    z-index: 5;
+}
+.hamburger div {
+    position: relative;
+    width: 3em;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #77828C;
+    margin: 0 auto;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    transition: all 0.3s ease-in-out;
+}
+
+.top-bun {
+  transform: translateY(10px) rotate(-45deg);
+}
+.bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+.meat {
+  transform: translateY(1px) rotate(45deg);
+}
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}

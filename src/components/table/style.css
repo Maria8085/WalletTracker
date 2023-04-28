@@ -1,10 +1,45 @@
 .line{
     display: grid;
-    grid-template-columns: repeat(6, minmax(0, auto));
     gap:10px;
     justify-content: space-between;
+    grid-template-areas: "A B C D E F";
+    
 }
 
-.littleText{
-    font-size: 18px;
+@media (max-width: 1024px) {
+    .line{
+        grid-template-areas: 
+        "A B C D"
+        "E E F F";
+        gap:7px;
+    }
+}
+
+@media (max-width: 414px) {
+    .line{
+        grid-template-areas: 
+        "A B"
+        "C D"
+        "E F";
+        gap:5px;
+    }
+}
+
+.line div:nth-child(1){
+    grid-area: A;
+}
+.line div:nth-child(2){
+    grid-area: B;
+}
+.line div:nth-child(3){
+    grid-area: C;
+}
+.line div:nth-child(4){
+    grid-area: D;
+}
+.line div:nth-child(5){
+    grid-area: E;
+}
+.line div:nth-child(6){
+    grid-area: F;
 }

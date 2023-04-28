@@ -6,7 +6,7 @@ import Table from "../table/table"
 function Tabs() {
 
   return (
-      <div className='w-full flex flex-col gap-9 items-start'>
+      <div className='w-full flex flex-col gap-9 items-start max-md:gap-4'>
         <div className="flex flex-row gap-7 items-center">
           <a className="text-black border-b-2 border-transparent hover:border-b-2 hover:border-my-blue hover:text-black cursor-pointer">Tokens</a>
           <a className="text-black border-b-2 border-transparent hover:border-b-2 hover:border-my-blue hover:text-black cursor-pointer">NFTs</a>

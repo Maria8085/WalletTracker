@@ -50,9 +50,9 @@ export default function Example() {
       {({ open }) => (
         <>
           <div className="relative">
-            <Listbox.Button className="relative w-full cursor-default rounded-md bg-my-gray py-1.5 pl-3 pr-10 text-left text-gray-900 focus:outline-none focus:ring-2 text-[18px] focus:ring-indigo-500">
+            <Listbox.Button className="relative w-full cursor-default rounded-md bg-my-gray py-1.5 pl-3 pr-10 text-left text-gray-900 focus:outline-none focus:ring-2 text-[18px] max-xl:text-base focus:ring-indigo-500 max-md:text-xs">
               <span className="flex items-center">
-                <img src={selected.image} alt="" className="h-5 w-5 flex-shrink-0 rounded-md" />
+                <img src={selected.image} alt="" className="h-5 w-5 max-md:h-4 max-md:w-4 flex-shrink-0 rounded-md" />
                 <span className="ml-3 block truncate">{selected.title}</span>
               </span>
               <span className="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">
@@ -67,7 +67,7 @@ export default function Example() {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Listbox.Options className="absolute z-10 mt-1 w-[200px] overflow-auto rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none text-[18px]">
+              <Listbox.Options className="absolute z-10 mt-1 min-w-[200px] w-full overflow-auto rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none text-[18px] max-xl:text-base max-md:text-xs">
                 {currency.map((money) => (
                   <Listbox.Option
                     key={money.id}
@@ -82,7 +82,7 @@ export default function Example() {
                     {({ selected, active }) => (
                       <>
                         <div className="flex items-center">
-                          <img src={money.image} alt="" className="h-5 w-5 flex-shrink-0 rounded-md" />
+                          <img src={money.image} alt="" className="h-5 w-5 max-md:h-4 max-md:w-4 flex-shrink-0 rounded-md" />
                           <span
                             className={cn(selected ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
                           >
